@@ -1,0 +1,149 @@
+@import "../components/colors";
+@import "../components/typography";
+
+.discover {
+    position: relative;
+    padding-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &.active {
+        .overline {
+            color: $color7780A1;
+        }
+        .most-title {
+            color: #fff;
+        }
+        .btn__group {
+            button {
+                color: $color7780A1;
+            }
+        }
+        .normal-box {
+            h4 {
+                color: $colorFFFFFF !important;
+            }
+            p, span {
+                color: #7780A1 !important;
+            }
+            button {
+                color: #2A27C9 !important;
+            }
+        }
+        .show-me-more {
+            color: #7780A1;
+        }
+    }
+
+    .overline {
+        text-align: center;
+        text-transform: uppercase;
+        @include headline7;
+        font-weight: 300;
+    }
+
+    .most-title {
+        text-align: center;
+        @include headline4;
+    }
+
+    .btn__group {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        button.active {
+            background-color: #4745D0;
+            color: #fff;
+        }
+    }
+
+    .normal-box {
+        position: relative;
+        margin: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        gap: 20px;
+
+        .normal-box-item {
+            width: 180px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .item {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                }
+            }
+
+            .title {
+                margin: 10px 0;
+
+                h4 {
+                    @include headline7;
+                    font-size: 16px;
+                }
+            }
+
+            .date {
+                @include headline7;
+                font-weight: 300;
+
+                .time {
+                    margin-top: 10px;
+
+                    span {
+                        margin: 5px 0 0 5px;
+                    }
+                }
+
+                button {
+                    @include headline7;
+                    font-weight: 300;
+                    background: rgba(42, 39, 201, 0.1);
+                    border-radius: 4px;
+                }
+            }
+
+            .people-heart {
+                @include headline7;
+                font-weight: 300;
+
+                i {
+                    padding-top: 5px;
+                    cursor: pointer;
+
+                    &.fas {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+    .show-me-more {
+        margin: 40px 0;
+        border: 2px solid #7780A1;
+        box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+    }
+
+    .line {
+        margin: 40px 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color7780A1;
+    }
+}

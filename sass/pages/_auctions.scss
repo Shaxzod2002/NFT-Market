@@ -1,0 +1,173 @@
+@import "../components/colors";
+@import "../components/typography";
+
+.auctions {
+    min-height: 110vh;
+
+    &.active {
+        .title-page {
+            color: #fff
+        }
+
+        .auction__box {
+            border: 1px solid $color7780A1;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+            .title {
+                h5 {
+                    color: #fff
+                }
+
+                button {
+                    color: #514CFF;
+                }
+            }
+
+            .date__time {
+                color: $colorFFFFFF;
+            }
+
+            .avatars-box {
+                p, span {
+                    color: #7780A1;
+                }
+            }
+        }
+    }
+
+    .title-page {
+        @include headline4;
+    }
+
+    .auction__box {
+        padding: 10px;
+        overflow: hidden;
+
+        .item {
+            border-radius: 20px;
+            overflow: hidden;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .title {
+            padding-top: 20px;
+
+            h5 {
+                @include headline7;
+            }
+
+            button {
+                width: 100px;
+                height: 36px;
+                background: rgba(42, 39, 201, 0.1);
+                border-radius: 4px;
+                @include headline8;
+            }
+        }
+
+        .date__time {
+            display: flex;
+            gap: 10px;
+            justify-content: start;
+            align-items: center;
+            border-bottom: 1px solid $color7780A1;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .avatars-box {
+            padding-top: 10px;
+            position: relative;
+            justify-content: space-between;
+
+            .avatars {
+                width: 90px;
+                height: 40px;
+                display: flex;
+                position: relative;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 0;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+
+                    &:nth-child(2) {
+                        left: 20px;
+                        z-index: 1;
+                    }
+
+                    &:nth-child(3) {
+                        left: 40px;
+                        z-index: 2;
+                    }
+
+                    &:nth-child(4) {
+                        left: 60px;
+                        z-index: 3;
+                    }
+
+                    &:hover {
+                        border: 2px solid gold;
+                        z-index: 4;
+                    }
+                }
+            }
+
+            p {
+                @include headline7;
+                font-weight: 400;
+            }
+
+            .heart {
+                display: flex;
+                gap: 5px;
+                cursor: pointer;
+                align-items: center;
+                @include headline7;
+
+                .fas {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 60px;
+        height: 60px;
+        top: 40%;
+        border-radius: 50%;
+        background-color: #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        &::after {
+            font-size: 10px;
+            color: black;
+        }
+    }
+}

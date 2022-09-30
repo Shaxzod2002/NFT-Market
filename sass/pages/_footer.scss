@@ -1,0 +1,205 @@
+@import "../components/colors";
+@import "../components/typography";
+
+footer {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &.active {
+        .brand {
+            .logos {
+                h1 {
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .menu {
+            ul li a {
+                color: $colorFFFFFF;
+            }
+        }
+    }
+
+    .footer-box {
+        width: 80%;
+        min-height: 50vh;
+        border: 1px solid $color7780A1;
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+        flex-wrap: wrap;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+        .brand {
+            width: calc(100%/3);
+            min-height: 50vh;
+            border-right: 1px solid $color7780A1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .logos {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                h1 {
+                    @include headline6;
+                }
+            }
+
+            .links {
+                display: flex;
+                gap: 10px;
+                justify-content: space-around;
+
+                li {
+                    a {
+                        color: $color7780A1;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            width: calc(100%/3);
+            min-height: 50vh;
+            padding: 10px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            ul li a {
+                @include headline7;
+            }
+
+            a.my-account {
+                width: 145px;
+                height: 52px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include headline7;
+                color: $colorFFFFFF;
+                background: linear-gradient(104.42deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60.23%), #2A27C9;
+                box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+                border-radius: 12px;
+            }
+
+            .social-networks {
+                display: flex;
+                gap: 20px;
+            }
+        }
+
+        .login {
+            width: calc(100%/3);
+            min-height: 50vh;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-left: 1px solid $color7780A1;
+
+            .paragraph {
+                color: $color7780A1;
+            }
+
+            .newsletter {
+                width: 300px;
+                height: 52px;
+                background: #FFFFFF;
+                align-items: center;
+                overflow: hidden;
+                box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+                border-radius: 16px;
+
+                input[type="text"] {
+                    border: none;
+                    outline: none;
+                    width: 60%;
+                    padding-left: 10px;
+                    height: 45px;
+                }
+
+                input[type="submit"] {
+                    width: 30%;
+                    height: 45px;
+                    border: none;
+                    background: transparent;
+                    @include headline7;
+                    color: #2A27C9;
+                }
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            width: 90%;
+
+            .brand {
+                padding: 20px 10px;
+            }
+
+            .login {
+                padding: 30px 10px;
+
+                .newsletter {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 100%;
+
+            .login {
+                padding: 30px 10px;
+
+                .newsletter {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .brand,
+            .menu,
+            .login {
+                width: 100%;
+                min-height: 40vh;
+                padding: 10px;
+                border: none;
+            }
+
+            .brand {
+                border-bottom: 1px solid $color7780A1;
+
+                img {
+                    width: 150px;
+                }
+
+                .links {
+                    flex-direction: column;
+                }
+            }
+
+            .menu {
+                border-bottom: 1px solid $color7780A1;
+            }
+
+            .login {
+                .newsletter {
+                    width: 90%;
+                    margin-left: 5%;
+                }
+            }
+        }
+    }
+}

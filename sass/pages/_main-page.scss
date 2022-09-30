@@ -1,0 +1,137 @@
+@import "../components/colors";
+@import "../components/typography";
+
+.main-page {
+    min-height: 100vh;
+
+    &.active {
+        .left {
+            .overline {
+                color: $color7780A1;
+            }
+            h1 {
+                color: $colorFFFFFF;
+            }
+            .paragraph {
+                color: $color7780A1;
+            }
+        }
+    }
+
+    .left {
+        width: 50%;
+        min-height: 100vh;
+
+        .overline {
+            @include headline7;
+            font-size: 15px;
+            font-weight: 300;
+            color: $color7780A1;
+        }
+
+        h1 {
+            @include headline1;
+        }
+
+        .paragraph {
+            @include headline7;
+            margin: 30px 0;
+            padding-right: 200px;
+        }
+
+        .btn-group {
+            width: 300px;
+            display: flex;
+            gap: 10px;
+
+            a {
+                width: 80px !important;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(104.42deg, #514CFF 0%, #2A27C9 60.23%);
+                box-shadow: inset -4px -4px 4px #0000001a, inset 4px 4px 4px #ffffff1a;
+                border-radius: 12px !important;
+                @include headline7;
+                color: $colorFFFFFF  !important;
+                -webkit-border-radius: 12px !important;
+                -moz-border-radius: 12px !important;
+                -ms-border-radius: 12px !important;
+                -o-border-radius: 12px !important;
+
+                &:active {
+                    color: $color7780A1  !important;
+                    background: transparent;
+                    border: 1px solid;
+                }
+
+                &:nth-child(2) {
+                    color: $color7780A1  !important;
+                    background: transparent;
+                    border: 1px solid;
+
+                    &:active {
+                        background: linear-gradient(104.42deg, #514CFF 0%, #2A27C9 60.23%);
+                        color: $colorFFFFFF  !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+        min-height: 100vh;
+
+        img {
+            width: 500px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .left {
+            h1 {
+                font-size: 40px;
+            }
+
+            .paragraph {
+                padding: 0;
+            }
+        }
+
+        .right {
+            img {
+                width: 380px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .left {
+            margin-top: 50px;
+            width: 100%;
+            min-height: 50vh;
+            padding: 20px 5px !important;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .paragraph {
+                padding: 0;
+            }
+        }
+
+        .right {
+            width: 100%;
+            min-height: 50vh;
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+}

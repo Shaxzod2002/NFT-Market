@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="nft market">
+    <meta name="description" content="NFT Market">
+    <meta name="auther" content="WebShohDev">
+    <link rel="shortcut icon" href="../Image/logo.ico" type="image/x-icon">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css">
+    <!-- Font Awesome icon links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Aos Animation Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>NFT Market</title>
+</head>
+
+<body>
+    <!-- nft web site started -->
+    <div class="container-fluid dark-moode-box" id="container">
+
+        <!-- light and dark box -->
+        <div class="dark-moode" id="dark-moode">
+            <i class="far fa-moon" id="dark-moode-icon"></i>
+        </div>
+
+        <!-- start navbar menu -->
+        <nav class="d-flex align-items-center dark-moode-box  justify-content-between flex-wrap gap-3">
+            <div class="nft-brand">
+                <img src="Image/Navbar/logo.png" alt="NFT Market">
+            </div>
+            <div class="menu align-items-center" id="menu">
+                <ul class="d-flex list-inline gap-5 pt-3">
+                    <li><a href="#auctions" onclick="showMenu()">Auctions</a></li>
+                    <li><a href="#roadmap" onclick="showMenu()">Roadmap</a></li>
+                    <li><a href="#discover" onclick="showMenu()">Discover</a></li>
+                    <li><a href="#community" onclick="showMenu()">Community</a></li>
+                </ul>
+            </div>
+            <div class="bars" onclick="showMenu()">
+                <i class="fas fa-bars"  id="bars-icon"></i>
+            </div>
+            <div class="login gap-3">
+                <a href="#" class="btn">Contact</a>
+                <a href="#" class="btn">My account</a>
+            </div>
+        </nav>
+        <!-- end navbar menu -->
+
+        <!-- start header page -->
+        <header class="dark-moode-box">
+            <div class="main-part flex-column justify-content-center align-items-center">
+                <div class="squares">
+                    <div class="square1 square-box"  data-aos="zoom-in">
+                        <img src="Image/Header/Squares/1.png" alt="01">
+                        <p>2.55 ETH</p>
+                    </div>
+                    <div class="square2 square-box"  data-aos="zoom-in">
+                        <img src="Image/Header/Squares/2.png" alt="02">
+                        <p>2.55 ETH</p>
+                    </div>
+                    <div class="square3 square-box"  data-aos="zoom-in">
+                        <img src="Image/Header/Squares/3.png" alt="03">
+                        <p>2.55 ETH</p>
+                    </div>
+                    <div class="square4 square-box"  data-aos="zoom-in">
+                        <img src="Image/Header/Squares/4.png" alt="04">
+                        <p>2.55 ETH</p>
+                    </div>
+                    <div class="square5 square-box"  data-aos="zoom-in">
+                        <img src="Image/Header/Squares/5.png" alt="05">
+                        <p>2.55 ETH</p>
+                    </div>
+                    <div class="square6 square-box"  data-aos="zoom-in">
+                        <img src="Image/Header/Squares/6.png" alt="06">
+                        <p>2.55 ETH</p>
+                    </div>
+                </div>
+                <p class="token" data-aos="zoom-in">Non Fungible Tokens</p>
+                <div class="title"  data-aos="zoom-in">
+                    <h1>
+                        A new NFT
+                        <img src="Image/Header/Vectors/1.png" alt="vector">
+                    </h1>
+                    <h1>
+                        &emsp;<img src="Image/Header/Vectors/2.png" alt="vector">
+                        Experience
+                    </h1>
+                </div>
+                <p class="discover-paragraph my-4"  data-aos="zoom-in">Discover, collect and sell</p>
+                <div class="search-box align-items-center justify-content-between" data-aos="zoom-in">
+                    <input type="text" placeholder="Items, collections and creators">
+                    <select>
+                        <option value="Category">Category</option>
+                        <option value="Category">Category Elem</option>
+                        <option value="Category">Category</option>
+                    </select>
+                    <img src="Image/Header/Main Port/Search Icon.png" alt="Search Icon">
+                </div>
+                <div class="logotypes align-items-center justify-content-center pt-5">
+                    <img src="Image/Header/LogoType/Ritter Sport.png" alt="Ritter Sport"  data-aos="zoom-in">
+                    <img src="Image/Header/LogoType/Nike.png" alt="Nike"  data-aos="zoom-in">
+                    <img src="Image/Header/LogoType/Adidas.png" alt="Adidas"  data-aos="zoom-in">
+                    <img src="Image/Header/LogoType/New Holland.png" alt="New Holland"  data-aos="zoom-in">
+                </div>
+            </div>
+        </header>
+        <!-- end header page -->
+
+        <!-- start auctions page -->
+        <section class="auctions mt-5 dark-moode-box" id="auctions">
+            <h3 class="title-page text-center mb-5" data-aos="zoom-in">Latest live auctions</h3>
+
+            <!-- auctions mySwiper page started  -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/2/item.png" alt="2">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">3.19 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>2:41 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/01.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/02.png" alt="02">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/03.png" alt="03">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/04.png" alt="04">
+                            </div>
+                            <p class="mt-3 mx-1">35 people are bidding</p>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                                <span>120</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/3/item.png" alt="3">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">3.19 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>2:41 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/3/Avatars/01.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/3/Avatars/02.png" alt="02">
+                                <img src="Image/Auctions/Boxes Items/3/Avatars/03.png" alt="03">
+                                <img src="Image/Auctions/Boxes Items/3/Avatars/04.png" alt="04">
+                            </div>
+                            <p class="mt-3 mx-1">67 people are bidding</p>
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <span>120</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/4/item.png" alt="4">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">1.19 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>15:11 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/04.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/4/Avatars/02.png" alt="02">
+                                <img src="Image/Auctions/Boxes Items/4/Avatars/03.png" alt="03">
+                                <img src="Image/Auctions/Boxes Items/4/Avatars/04.png" alt="04">
+                            </div>
+                            <p class="mt-3 mx-1">129 people are bidding</p>
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/2/item.png" alt="55">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">3.19 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>2:41 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/5/Avatars/01.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/5/Avatars/02.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/5/Avatars/03.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/5/Avatars/04.png" alt="01">
+                            </div>
+                            <p class="mt-3 mx-1">35 people are bidding</p>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                                <span>120</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/2/item.png" alt="2">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">2.69 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>2:21 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/01.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/02.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/03.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/04.png" alt="01">
+                            </div>
+                            <p class="mt-3 mx-1">65 people are bidding</p>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                                <span>120</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/2/item.png" alt="2">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">2.19 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>6:31 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/01.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/02.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/03.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/04.png" alt="01">
+                            </div>
+                            <p class="mt-3 mx-1">55 people are bidding</p>
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <span>379</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/2/item.png" alt="2">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">1.19 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>08:21 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/01.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/02.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/03.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/04.png" alt="01">
+                            </div>
+                            <p class="mt-3 mx-1">9 people are bidding</p>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                                <span>27</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/2/item.png" alt="2">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">5.19 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>15:41 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/01.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/02.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/03.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/04.png" alt="01">
+                            </div>
+                            <p class="mt-3 mx-1">95 people are bidding</p>
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <span>317</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide auction__box pb-2" data-aos="zoom-in">
+                        <div class="item">
+                            <img src="Image/Auctions/Boxes Items/2/item.png" alt="2">
+                        </div>
+                        <div class="title d-flex justify-content-between align-items-center gap-1 m-1">
+                            <h5>
+                                Vulputate felis purus viverra morbi facilisi eget
+                            </h5>
+                            <button class="btn">3.59 ETH</button>
+                        </div>
+                        <div class="date__time p-2">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>10:48 min left</span>
+                        </div>
+                        <div class="avatars-box d-flex align-items-center">
+                            <div class="avatars">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/01.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/02.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/03.png" alt="01">
+                                <img src="Image/Auctions/Boxes Items/2/Avatars/04.png" alt="01">
+                            </div>
+                            <p class="mt-3 mx-1">65 people are bidding</p>
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <span>172</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- auctions mySwiper page end  -->
+        </section>
+        <!-- end auctions page -->
+
+        <!-- start main page  -->
+        <section class="main-page dark-moode-box d-flex" id="main-page">
+            <div class="left d-flex flex-column justify-content-center ps-5" data-aos="zoom-in-right">
+                <p class="overline">Overline</p>
+                <h1>Sapien ipsum scelerisque convallis fusce</h1>
+                <p class="paragraph">
+                    Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor
+                    feugiat aliquam commodo.
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="btn">Get started</a>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+            <div class="right d-flex justify-content-center align-items-center" data-aos="zoom-in-left">
+                <img src="Image/Auctions/Right - Image.png" alt="right image">
+            </div>
+        </section>
+        <!-- end main page  -->
+
+        <!-- start get-started page  -->
+        <section class="get-started dark-moode-box d-flex justify-content-center gap-3" id="get-started">
+            <div class="box" data-aos="zoom-in-right">
+                <h2>Check out the hottest Sale offers</h2>
+                <!-- Slider main container -->
+                <div class="swiper swiper-box">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="Image/Auctions/Hottest Sale Box/theme.png" alt="01">
+                            </div>
+                            <h5>Fames habitasse risus ultricies tortor sit</h5>
+                            <div class="date__times d-flex justify-content-between px-1">
+                                <div class="times">
+                                    <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="times">
+                                    <span>22:59</span>
+                                </div>
+                                <button class="btn">2.55 ETH</button>
+                            </div>
+                            <div class="like-heart">
+                                <p>101 people are bidding</p>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="Image/Auctions/Hottest Sale Box/theme.png" alt="01">
+                            </div>
+                            <h5>Fames habitasse risus ultricies tortor sit</h5>
+                            <div class="date__times d-flex justify-content-between px-1">
+                                <div class="times">
+                                    <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="times">
+                                    <span>12:39</span>
+                                </div>
+                                <button class="btn">1.55 ETH</button>
+                            </div>
+                            <div class="like-heart">
+                                <p>151 people are bidding</p>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="Image/Auctions/Hottest Sale Box/theme.png" alt="01">
+                            </div>
+                            <h5>Fames habitasse risus ultricies tortor sit</h5>
+                            <div class="date__times d-flex justify-content-between px-1">
+                                <div class="times">
+                                    <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="times">
+                                    <span>19:59</span>
+                                </div>
+                                <button class="btn">2.55 ETH</button>
+                            </div>
+                            <div class="like-heart">
+                                <p>209 people are bidding</p>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn show__me">Show me more</button>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="box create-get-started" data-aos="zoom-in">
+                <img src="Image/Auctions/Get Started Box/Vector.png" class="vector" alt="vector">
+                <div class="btn-group">
+                    <button class="btn-box"></button>
+                    <button class="btn-box"></button>
+                    <button class="btn-box"></button>
+                </div>
+                <div class="image">
+                    <img src="Image/Auctions/Get Started Box/Image.png" alt="image">
+                </div>
+                <h2 class="text-light">Get started creating & selling your NFTs</h2>
+                <p>
+                    Nunc gravida faucibus netus feugiat tellus, viverra massa feugiat. Mi est sit.
+                </p>
+                <button class="btn">Get started</button>
+            </div>
+            <div class="box top-nft" data-aos="zoom-in-left">
+                <h2>Top NFT at a lower price</h2>
+                <div class="small-box-item gap-2 d-flex">
+                    <div class="item">
+                        <img src="Image/Auctions/Top NFT Box/items/1.png" alt="1">
+                    </div>
+                    <div class="elements">
+                        <h5 class="title">
+                            Vulputate velit viverra volutpat volutpat tristique
+                        </h5>
+                        <div class="date">
+                            <div class="time">
+                                <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                                <span class="pt-1">22:59</span>
+                            </div>
+                            <button class="btn">1.25 ETH</button>
+                        </div>
+                        <div class="heart">
+                            <p>101 people are bidding</p>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-box-item gap-2 d-flex">
+                    <div class="item">
+                        <img src="Image/Auctions/Top NFT Box/items/2.png" alt="2">
+                    </div>
+                    <div class="elements">
+                        <h5 class="title">
+                            Egestas blandit sit egestas non sed. Purus semper
+                        </h5>
+                        <div class="date">
+                            <div class="time">
+                                <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                                <span class="pt-1">22:59</span>
+                            </div>
+                            <button class="btn">1.25 ETH</button>
+                        </div>
+                        <div class="heart">
+                            <p>101 people are bidding</p>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-box-item gap-2 d-flex">
+                    <div class="item">
+                        <img src="Image/Auctions/Top NFT Box/items/3.png" alt="3">
+                    </div>
+                    <div class="elements">
+                        <h5 class="title">
+                            Id ut consequat netus nec vel amet ut porta in augue
+                        </h5>
+                        <div class="date">
+                            <div class="time">
+                                <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                                <span class="pt-1">22:59</span>
+                            </div>
+                            <button class="btn">1.25 ETH</button>
+                        </div>
+                        <div class="heart">
+                            <p>101 people are bidding</p>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-box-item gap-2 d-flex">
+                    <div class="item">
+                        <img src="Image/Auctions/Top NFT Box/items/4.png" alt="4">
+                    </div>
+                    <div class="elements">
+                        <h5 class="title">
+                            Sed et nibh felis integer tellus turpin
+                        </h5>
+                        <div class="date">
+                            <div class="time">
+                                <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                                <span class="pt-1">22:59</span>
+                            </div>
+                            <button class="btn">1.25 ETH</button>
+                        </div>
+                        <div class="heart">
+                            <p>101 people are bidding</p>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="show__me btn">Show me more</button>
+            </div>
+        </section>
+        <!-- end get-started page  -->
+
+        <!-- start roadmap page  -->
+        <section class="roadmap dark-moode-box d-flex" id="roadmap">
+            <div class="left"  data-aos="zoom-in-right">
+                <img src="Image/Auctions/Bottom Page/Left - Image.png" alt="Left - Image">
+            </div>
+            <div class="right"  data-aos="zoom-in-left">
+                <p class="overline">Overline</p>
+                <h1 class="title">Habitant tristique aliquam in vel scelerisque</h1>
+                <p class="paragraph">
+                    Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor
+                    feugiat aliquam commodo.
+                </p>
+                <div class="materials d-flex">
+                    <div class="materials-left">
+                        <img src="Image/Auctions/Bottom Page/Icons/1.png" alt="icon">
+                        <br><br>
+                        <span class="bold">Sollicitudin sapien</span>
+                        <br>
+                        <span>Cursus fermentum</span>
+                    </div>
+                    <div class="materials-right">
+                        <img src="Image/Auctions/Bottom Page/Icons/2.png" alt="icon">
+                        <br><br>
+                        <span class="bold">Pulvinar metus</span>
+                        <br>
+                        <span>Nunc sed</span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn">Get started</button>
+                    <button class="btn">Learn more</button>
+                </div>
+            </div>
+        </section>
+        <!-- roadmap page end  -->
+
+        <!-- start discover page -->
+        <section class="discover dark-moode-box" id="discover">
+            <p class="overline" data-aos="zoom-in">Overline</p>
+            <h1 class="most-title" data-aos="zoom-in">Most popular live auctions</h1>
+            <div class="btn__group d-flex justify-content-center gap-2 mt-3" data-aos="zoom-in">
+                <button class="btn p-1 border rounded-2 active">Architecture</button>
+                <button class="btn p-1 border rounded-2">Photography</button>
+                <button class="btn p-1 border rounded-2">Games</button>
+                <button class="btn p-1 border rounded-2">Music</button>
+            </div>
+            <div class="normal-box">
+                <div class="normal-box-item" data-aos="zoom-in">
+                    <div class="item">
+                        <img src="Image/Auctions/Normal Box Item/Item/1.png" alt="01">
+                    </div>
+                    <div class="title">
+                        <h4>Faucibus habitasse at et platea massa mauris</h4>
+                    </div>
+                    <div class="date d-flex align-items=center justify-content-between border-bottom pb-3">
+                        <div class="time">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>22:59</span>
+                        </div>
+                        <button class="btn">2.55 ETH</button>
+                    </div>
+                    <div class="people-heart pt-3 d-flex align-items=center justify-content-between">
+                        <p>101 people are bidding</p>
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="normal-box-item" data-aos="zoom-in">
+                    <div class="item">
+                        <img src="Image/Auctions/Normal Box Item/Item/2.png" alt="02">
+                    </div>
+                    <div class="title">
+                        <h4>Diam purus sagittis nisl erat mauris</h4>
+                    </div>
+                    <div class="date d-flex align-items=center justify-content-between border-bottom pb-3">
+                        <div class="time">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>22:59</span>
+                        </div>
+                        <button class="btn">2.55 ETH</button>
+                    </div>
+                    <div class="people-heart pt-3 d-flex align-items=center justify-content-between">
+                        <p>101 people are bidding</p>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="normal-box-item" data-aos="zoom-in">
+                    <div class="item">
+                        <img src="Image/Auctions/Normal Box Item/Item/3.png" alt="03">
+                    </div>
+                    <div class="title">
+                        <h4>Nascetur mauris viverra vel id id sem leo</h4>
+                    </div>
+                    <div class="date d-flex align-items=center justify-content-between border-bottom pb-3">
+                        <div class="time">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>22:59</span>
+                        </div>
+                        <button class="btn">2.55 ETH</button>
+                    </div>
+                    <div class="people-heart pt-3 d-flex align-items=center justify-content-between">
+                        <p>101 people are bidding</p>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="normal-box-item" data-aos="zoom-in">
+                    <div class="item">
+                        <img src="Image/Auctions/Normal Box Item/Item/4.png" alt="04">
+                    </div>
+                    <div class="title">
+                        <h4>Velit, fusce id non dui amet amet maecenas</h4>
+                    </div>
+                    <div class="date d-flex align-items=center justify-content-between border-bottom pb-3">
+                        <div class="time">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>22:59</span>
+                        </div>
+                        <button class="btn">2.55 ETH</button>
+                    </div>
+                    <div class="people-heart pt-3 d-flex align-items=center justify-content-between">
+                        <p>101 people are bidding</p>
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="normal-box-item" data-aos="zoom-in">
+                    <div class="item">
+                        <img src="Image/Auctions/Normal Box Item/Item/5.png" alt="05">
+                    </div>
+                    <div class="title">
+                        <h4>Tellus duis neque fringilla pulvinar gravida</h4>
+                    </div>
+                    <div class="date d-flex align-items=center justify-content-between border-bottom pb-3">
+                        <div class="time">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>22:59</span>
+                        </div>
+                        <button class="btn">2.55 ETH</button>
+                    </div>
+                    <div class="people-heart pt-3 d-flex align-items=center justify-content-between">
+                        <p>101 people are bidding</p>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="normal-box-item" data-aos="zoom-in">
+                    <div class="item">
+                        <img src="Image/Auctions/Normal Box Item/Item/6.png" alt="06">
+                    </div>
+                    <div class="title">
+                        <h4>Odio lacus neque ultrices purus eget</h4>
+                    </div>
+                    <div class="date d-flex align-items=center justify-content-between border-bottom pb-3">
+                        <div class="time">
+                            <img src="Image/Auctions/Boxes Items/Timer Icon/timer.png" alt="timer">
+                            <span>22:59</span>
+                        </div>
+                        <button class="btn">2.55 ETH</button>
+                    </div>
+                    <div class="people-heart pt-3 d-flex align-items=center justify-content-between">
+                        <p>101 people are bidding</p>
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            <button class="show-me-more btn" data-aos="zoom-in">Show me more</button>
+            <div class="line"></div>
+        </section>
+        <!-- end discover page -->
+
+        <!-- start community page -->
+        <section class="community dark-moode-box" id="community">
+            <div class="active-users">
+                <div class="box actives" data-aos="zoom-in">
+                    <div class="avatar">
+                        <img src="Image/Auctions/Active Users/Avatar/1.png" alt="1">
+                    </div>
+                    <div class="number">
+                        <h3>300<span>k</span></h3>
+                    </div>
+                    <div class="text">
+                        <p>Users Active</p>
+                    </div>
+                </div>
+                <div class="box artwork" data-aos="zoom-in">
+                    <div class="avatar">
+                        <img src="Image/Auctions/Active Users/Avatar/2.png" alt="2">
+                    </div>
+                    <div class="number">
+                        <h3>52,5<span>k</span></h3>
+                    </div>
+                    <div class="text">
+                        <p>Artworks</p>
+                    </div>
+                </div>
+                <div class="box artists" data-aos="zoom-in">
+                    <div class="avatar">
+                        <img src="Image/Auctions/Active Users/Avatar/3.png" alt="3">
+                    </div>
+                    <div class="number">
+                        <h3>17,5<span>k</span></h3>
+                    </div>
+                    <div class="text">
+                        <p>Artists</p>
+                    </div>
+                </div>
+                <div class="box eth-spent" data-aos="zoom-in">
+                    <div class="avatar">
+                        <img src="Image/Auctions/Active Users/Avatar/4.png" alt="4">
+                    </div>
+                    <div class="number">
+                        <h3>35.58</h3>
+                    </div>
+                    <div class="text">
+                        <p>ETH Spent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="join-now d-flex flex-column"  data-aos="zoom-in">
+                <div class="top-line">
+                    <img src="Image/Auctions/Join Now/Vector.png" id="top-line-vector" alt="vector">
+                    <div class="btn__group">
+                        <button></button><button></button><button></button>
+                    </div>
+                </div>
+                <div class="box d-flex">
+                    <div class="left">
+                        <p class="overline">Overline</p>
+                        <h1>Cursus vitae sollicitudin donec nascetur. Join now</h1>
+                        <p class="text">
+                            Donec volutpat bibendum justo, odio aenean congue est porttitor ut. Mauris vestibulum eros
+                            libero amet tincidunt.
+                        </p>
+                        <div class="btn__group">
+                            <button class="get">Get started</button>
+                            <button class="more">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="blur"></div>
+                        <div class="user one d-flex">
+                            <div class="avatar">
+                                <img src="Image/Auctions/Join Now/Avatar/1.png" alt="1">
+                            </div>
+                            <div class="materials d-flex flex-column justify-content-center">
+                                <p class="email">@brook_sim</p>
+                                <div class="elements d-flex">
+                                    <img src="Image/Auctions/Join Now/user/icons/1.png" alt="icon">
+                                    <p>Items 206</p>
+                                    <img src="Image/Auctions/Join Now/user/icons/2.png" alt="icon">
+                                    <p>Collection 12</p>
+                                    <button>4.78 ETH</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user two d-flex">
+                            <div class="avatar">
+                                <img src="Image/Auctions/Join Now/Avatar/2.png" alt="2">
+                            </div>
+                            <div class="materials d-flex flex-column justify-content-center">
+                                <p class="email">@brook_sim</p>
+                                <div class="elements d-flex">
+                                    <img src="Image/Auctions/Join Now/user/icons/1.png" alt="icon">
+                                    <p>Items 206</p>
+                                    <img src="Image/Auctions/Join Now/user/icons/2.png" alt="icon">
+                                    <p>Collection 12</p>
+                                    <button>4.78 ETH</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <div class="avatar">
+                                <img src="Image/Auctions/Join Now/Avatar/3.png" alt="3">
+                            </div>
+                        </div>
+                        <div class="user four d-flex">
+                            <div class="avatar">
+                                <img src="Image/Auctions/Join Now/Avatar/4.png" alt="4">
+                            </div>
+                            <div class="materials d-flex flex-column justify-content-center">
+                                <p class="email">@marvinmckin</p>
+                                <div class="elements d-flex">
+                                    <img src="Image/Auctions/Join Now/user/icons/1.png" alt="icon">
+                                    <p>Items 479</p>
+                                    <img src="Image/Auctions/Join Now/user/icons/2.png" alt="icon">
+                                    <p>Collection 24</p>
+                                    <button>7.55 ETH</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user five d-flex">
+                            <div class="avatar">
+                                <img src="Image/Auctions/Join Now/Avatar/5.png" alt="5">
+                            </div>
+                            <div class="materials d-flex flex-column justify-content-center">
+                                <p class="email">@brook_sim</p>
+                                <div class="elements d-flex">
+                                    <img src="Image/Auctions/Join Now/user/icons/1.png" alt="icon">
+                                    <p>Items 206</p>
+                                    <img src="Image/Auctions/Join Now/user/icons/2.png" alt="icon">
+                                    <p>Collection 12</p>
+                                    <button>4.78 ETH</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user six d-flex">
+                            <div class="avatar">
+                                <img src="Image/Auctions/Join Now/Avatar/6.png" alt="6">
+                            </div>
+                            <div class="materials d-flex flex-column justify-content-center">
+                                <p class="email">@brook_sim</p>
+                                <div class="elements d-flex">
+                                    <img src="Image/Auctions/Join Now/user/icons/1.png" alt="icon">
+                                    <p>Items 206</p>
+                                    <img src="Image/Auctions/Join Now/user/icons/2.png" alt="icon">
+                                    <p>Collection 12</p>
+                                    <button>4.78 ETH</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end commuity page -->
+
+        <!-- start nft image group -->
+        <section class="nft-image-group d-flex justify-content-between align-items-center row">
+            <div class="swiper nft-images">
+                <div class="swiper-wrapper">
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/1.png" alt="1">
+                        <p>1.51 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/2.png" alt="2">
+                        <p>3.25 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/3.png" alt="3">
+                        <p>3.62 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/4.png" alt="4">
+                        <p>3.82 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/5.png" alt="5">
+                        <p>2.77 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/6.png" alt="6">
+                        <p>1.61 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/7.png" alt="7">
+                        <p>2.29 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/8.png" alt="8">
+                        <p>2.03 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/9.png" alt="9">
+                        <p>3.69 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/10.png" alt="10">
+                        <p>1.49 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/11.png" alt="11">
+                        <p>3.21 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/12.png" alt="12">
+                        <p>2.22 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/13.png" alt="13">
+                        <p>2.82 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/14.png" alt="14">
+                        <p>1.49 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/15.png" alt="15">
+                        <p>1.57 ETH</p>
+                    </div>
+                    <div class="box swiper-slide" data-aos="zoom-in">
+                        <img src="Image/Community/NFT Image Group/16.png" alt="16">
+                        <p>2.88 ETH</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end nft image group -->
+
+        <!-- start footer page -->
+        <footer class="dark-moode-box">
+            <div class="footer-box">
+                <div class="brand" data-aos="zoom-in-right">
+                    <div class="logos d-flex gap-2">
+                        <img src="Image/Footer/Icons/Sygnet.png" alt="logo">
+                        <h1 class="pt-1">NFT Market</h1>
+                    </div>
+                    <ul class="links list-inline">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Term of service</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+                </div>
+                <div class="menu" data-aos="zoom-in">
+                    <ul class="d-flex list-inline flex-column">
+                        <li><a href="#auctions">Auctions</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#discover">Discover</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                    <a href="#" class="my-account">My account</a>
+                    <div class="social-networks">
+                        <a href="#"><img src="Image/Footer/Icons/Facebook Icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="Image/Footer/Icons/LinkedIn Icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="Image/Footer/Icons/Github Icon.png" alt="Github"></a>
+                        <a href="#"><img src="Image/Footer/Icons/Twitter Icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="Image/Footer/Icons/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="login" data-aos="zoom-in-left">
+                    <p class="paragraph">
+                        Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, sed egestas in. Id nam
+                        semper dolor tellus
+                        vulputate eget turpis.
+                    </p>
+                    <form action="#" class="newsletter d-flex justify-content-between">
+                        <input type="text" placeholder="Newsletter">
+                        <input type="submit" value="Sign in">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer page -->
+
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Aos Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- javascript libraries link -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
